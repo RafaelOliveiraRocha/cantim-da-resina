@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+        <title>Cantim - Entre em contato conosco.</title>
+
+        <meta name="description" content="Entre em contato consoco, pode ser para pedir
+        um orçamento para sua peça, para tirar dúvidas a respeito da personalização,
+        críticas ou fazer seu pedido.">
+        
+        <meta property="og:type" content="website"/>
+        <meta property="og:title" content="Cantim - Entre em contato conosco."/>
+        <meta property="og:description" content="Entre em contato consoco, pode ser para pedir
+        um orçamento para sua peça, para tirar dúvidas a respeito da personalização,
+        críticas ou fazer seu pedido."/>
+        <meta property="og:url" content="http://cantimdaresina.com/contato.html"/>
+        <meta property="og:image" content="http://cantimdaresina.com/img/og-image.jpg" />  
+
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="shortcut icon" href="favicon.ico">
+
+        <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
+        <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
+        <link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
+        <link rel="icon" type="image/png" sizes="192x192"  href="/android-icon-192x192.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+        <link rel="manifest" href="/manifest.json">
+        <meta name="msapplication-TileColor" content="#fa851a">
+        <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+        <meta name="theme-color" content="#fa851a">
+
+
+        <link rel="stylesheet" href="css/style.css">
+        <script>document.documentElement.classList.add("js");</script>
+    </head>
+
+    <body>
+
+        <!--ABRE HEADER-->
+        <header class="header">
+            <div class="container">
+                <a href="index.html" class="grid-4">
+                    <img src="img/icone/cantindaresina.svg" alt="Cantim da Resina">
+                </a>
+                <nav class="header_menu grid-12">
+                    <ul>
+                        <li><a href="sobre.html">Sobre</a></li>
+                        <li><a href="produtos.html">Produtos</a></li>
+                        <li><a href="portfolio.html">Portfólio</a></li>
+                        <li><a href="contato.html" class="menu_ativo">Contato</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+<!--FECHA HEADER-->
+
+         <!--ABRE INTRODUÇÃO INTERNA-->
+         <section class="introducao-interna interna_contato">
+            <div class="container">
+                <h1 data-anime="400" class="fadeInDown">contato</h1>
+                <p data-anime="800" class="fadeInDown">Tire suas dúvidas conosco</p>
+            </div>
+        </section>
+<!--FECHA INTRODUÇÃO INTERNA-->
+
+
+<!--ABRE CONTATO-->
+    <section data-anime="1200" class="fadeInDown contato">
+        <div class="container">
+            <form id="form_orcamento" method="POST" action="./enviar.php" class="contato_form grid-8 formphp">
+                <label for="nome">Nome</label>
+                <input type="text" id="nome" name="nome" required>
+
+                <label for="email">E-mail</label>
+                <input type="email" id="email" name="email" required>
+
+                <label class="nao-aparece">Se você não é um robô, deixe em branco.</label>
+                <input type="text" class="nao-aparece" name="leaveblank">
+
+
+                <label class="nao-aparece">Se você não é um robô, não mude este campo.</label>
+                <input type="text" class="nao-aparece" name="dontchange" value="http://">
+
+                <label for="telefone">Telefone</label>
+                <input type="text" id="telefone" name="telefone">
+
+                <label for="mensagem">Mensagem</label>
+                <textarea id="mensagem" name="mensagem" required></textarea>
+
+                <button id="enviar" name="enviar" type="submit" class="btn btn-preto">Enviar</button>
+            </form>
+
+            <div class="contato_dados grid-8">
+                <h3>Dados</h3>
+                <span>+55 32 99999-9999</span>
+                <span class="dados_email">orcamento@cantimresina.com</span>
+                <span class="sj">S.J.Nepomuceno - MG</span>
+            </div>
+
+            <div class="grid-4 footer_redes">
+                <h3>Redes Sociais</h3>
+                <ul>
+                    <li><a href="http://instagram.com" target="_blank"><img src="img/icone/redes-socias/vt_insta.svg" alt="Instagram"></a></li>
+                    <li><a href="http://tiktok.com" target="_blank"><img src="img/icone/redes-socias/vt_tiktok.svg" alt="TikTok"></a></li>
+                    <li><a href="http://facebook.com" target="_blank"><img src="img/icone/redes-socias/vt_face.svg" alt="Facebook"></a></li>
+                </ul>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="container contato_mapa">
+        <a href="http://google.com" target="_blank" class="grid-16"><img src="img/contato/contato-cartao.jpg" alt="Contato Cantin"></a>
+    </section>
+<!--FECHA CONTATO-->
+
+
+
+<!--ABRE QUEBRA-->
+    <div class="quebra">
+        <blockquote class="quote-externo container">
+            <p>“Luxo é ter na sua casa aquilo que te deixa feliz.”</p>
+                <cite>ISAY WEINFELD</cite>
+        </blockquote>
+    </div>
+<!--FECHA QUEBRA-->
+
+<!--ABRE CONTEÚDO FOOTER-->
+       <footer>
+        <div class="footer">
+            <div class="container">
+
+                <div class="grid-8 footer_historia">
+                    <h3>Nossa História</h3>
+                    <p>Quando iniciamos o Cantim da Resina queríamos apenas um produto
+                       que desse gosto de usar. Adorávamos customizar as coisas
+                       que comprávamos. Assim surgiu um sonho nos fundos da nossa casa.</p>
+                </div>
+
+                <div class="grid-4 footer_contato">
+                    <h3>Contato</h3>
+                    <ul>
+                        <li>Whatsapp: 3299999-9999</li>
+                        <li>Email: contato@catimdaresina.com</li>
+                        <li>S.J.Nepomuceno - MG</li>
+                    </ul>
+                </div>
+
+                <div class="grid-4 footer_redes">
+                    <h3>Redes Sociais</h3>
+                    <ul>
+                        <li><a href="http://instagram.com" target="_blank"><img src="img/icone/redes-socias/vt_insta.svg" alt="Instagram"></a></li>
+                        <li><a href="http://tiktok.com" target="_blank"><img src="img/icone/redes-socias/vt_tiktok.svg" alt="TikTok"></a></li>
+                        <li><a href="http://facebook.com" target="_blank"><img src="img/icone/redes-socias/vt_face.svg" alt="Facebook"></a></li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="rodape">
+            <div class="container">
+                <p class="grid-16">Cantim da Resina-2021 - Todos direitos reservados</p>
+            </div>
+        </div>
+    </footer>
+<!--FECHA FOOTER-->
+
+    <script src="./js/simple-anime.js"></script>
+    <script src="./js/simple-form.js"></script>
+    <script src="./js/script.js"></script>
+
+    </body>
+
+</html>
