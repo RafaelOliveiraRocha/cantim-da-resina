@@ -1,0 +1,9 @@
+# Configuração local; o PHP não carrega estes arquivos automaticamente
+.env
+.env.*
+
+# Logs e temporários locais
+*.log
+*.tmp
+*.swp
+*~
