@@ -83,7 +83,9 @@ try {
     </body>
   </html>
 
-<?php } catch (\Throwable $e) { ?>
+<?php } catch (\Throwable $e) {
+  http_response_code(500);
+?>
 
   <html>
     <head>

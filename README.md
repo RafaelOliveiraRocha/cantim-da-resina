@@ -40,10 +40,8 @@ Os endpoints leem `getenv`, não carregam `.env` automaticamente e não têm fal
 
 ## Limitações preservadas
 
-- `index.html`, `portfolio.html` e `sobre.html` carregam `js/script.js` sem carregar Simple Form; a instanciação sem guarda nessa fonte pode gerar `ReferenceError`. Foi observado por leitura, sem execução da interface.
 - A configuração SMTP conserva `SMTPSecure = "tsl"`, grafia histórica a rever. Os arquivos calculam `$sanitize_value` e continuam usando o valor original no corpo; `FILTER_SANITIZE_STRING` demanda revisão de compatibilidade. Não se corrigiram essas regras nesta etapa.
 - O filtro anti-bot SMTP usa OR entre os dois campos; o endpoint SendGrid apenas exclui esses campos do corpo. Validação dos dados enviados, abuso dos endpoints e tratamento de POST incompleto precisam de revisão antes de disponibilizar envio.
-- No tratamento histórico de exceções SMTP, `enviar.php` apresenta HTML de erro sem definir status HTTP de falha; o Simple Form pode interpretá-lo como sucesso. Essa regra foi mantida, enquanto a nova guarda de configuração retorna 503. O fluxo completo de envio precisa ser revisto antes de ativação.
 - A configuração de produção deve impedir exibição de warnings/erros internos do PHP. Esta revisão protege as mensagens próprias e exceções capturadas; não oferece garantia sobre configuração externa de logs ou servidor.
 - Não foram instaladas dependências, executados endpoints ou enviados emails. Disponibilidade dos serviços, compatibilidade das bibliotecas, credenciais, remetentes e funcionamento dos formulários não foram validados.
 

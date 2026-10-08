@@ -22,12 +22,14 @@ new simpleAnime();
 
 }
 
-new simpleForm({
+if (typeof window.simpleForm === "function" && document.querySelector(".formphp")) {
+new window.simpleForm({
   form: ".formphp", // seletor do formulário
   button: "#enviar", // seletor do botão
   erro: "<div id='form-erro'><h2>Falha no envio!</h2><p>Formulário não enviado. O envio pode estar indisponível ou sem configuração.</p></div>", // mensagem de erro
   sucesso: "<div id='form-sucesso'><h2>Formulário enviado com sucesso</h2><p>Em breve eu entro em contato com você.</p></div>", // mensagem de sucesso
 });
+}
 
 
 
